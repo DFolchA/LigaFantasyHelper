@@ -1,0 +1,26 @@
+## README
+../README.md
+
+## Creacion de claves ssh
+
+Generamos la clave:
+```
+dfolch@pop-os:~/LigaFantasyHelper$ ssh-keygen
+```
+Tambien podemos usar una clave gpg:
+```
+gpg --full-generate-key
+```
+
+Subimos la clave a GitHub en la seccion de `settings->SSH and GPG keys->New SSH key`
+
+![clave SHH](images/clave.png)
+
+## Configuracion de git
+
+Añadimos el nombre de usuario y el email, lo hago localmente para este repositorio para no interferir con otros proyectos:
+```
+git config user.signingkey "key"
+git config user.name "dfolcha"
+git config user.email "dfolcha@gmail.com"
+```
